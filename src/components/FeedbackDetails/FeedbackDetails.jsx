@@ -7,15 +7,15 @@ const FeedbackDetails = () => {
 
   const accordionData = [
     {
-      title: "Feedback Detail 1",
+      title: "Let go of limiting beliefs",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      title: "Feedback Detail 2",
+      title: "Break down barriers",
       content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-      title: "Feedback Detail 3",
+      title: "Fall in love with your true self",
       content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
   ];

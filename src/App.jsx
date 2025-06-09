@@ -4,6 +4,7 @@ import AchievePart from './components/AchievePart/AchievePart'
 import Founder from './components/Founder/Founder'
 import AssociatedComp from './components/AssociatedComp/AssociatedComp'
 import FeedbackDetails from './components/FeedbackDetails/FeedbackDetails'
+import CommentDetails from './components/CommentDetails/CommentDetails'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Founder />
       <AssociatedComp />
       <FeedbackDetails />
+      <CommentDetails />
     </div>
   )
 }
