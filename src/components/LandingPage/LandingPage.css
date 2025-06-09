@@ -77,6 +77,10 @@
   background: #c04f29;
 }
 
+.mobile-text {
+  display: none;
+}
+
 .image-content {
   position: relative;
   flex: 1;
@@ -124,6 +128,21 @@
     text-align: left;
     order: 2;
     min-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-content button {
+    align-self: center;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
   }
   
   .image-content {
@@ -142,10 +161,5 @@
   .text-content p {
     font-size: 1.1rem;
     padding: 0;
-  }
-  
-  .text-content button {
-    align-items: center;
-    margin: 10px;
   }
 }

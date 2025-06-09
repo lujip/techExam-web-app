@@ -14,7 +14,10 @@ const LandingPage = () => {
           <p>Overcome the beliefs that block your ability to connect with high quality men and learn the real reason
             why smart, successful women are still single after 30.
           </p>
-          <button>Download Your Guide Now</button>
+          <button>
+            <span className="desktop-text">Download Your Guide Now</span>
+            <span className="mobile-text">Download Your Guide</span>
+          </button>
         </div>
         
         <div className="image-content">

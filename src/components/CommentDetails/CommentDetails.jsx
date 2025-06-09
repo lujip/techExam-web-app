@@ -8,13 +8,13 @@ const CommentDetails = () => {
   
   const comments = [
     {
-      text: "Once Marni held me accountable, it was easier for me to finally recognize when Mr. Right (Mark) came along.",
+      text: "''Once Marni held me accountable, it was easier for me to finally recognize when Mr. Right (Mark) came along.''",
       subtext: "If I hadn't followed the guiding hand of Marni, I wouldn't have been ready to accept the moments and opportunities presented to me every day.",
       image: janice,
       name: "Janice"
     },
     {
-      text: "I am now much more grounded and confident and I feel like I'm living the life that I wanted to live now.",
+      text: "''I am now much more grounded and confident and I feel like I'm living the life that I wanted to live now.''",
       subtext: "When I first joined the program, the best initial results I got were me actually loving who I am. I think I always had an appreciation for myself, but I didn't truly believe that I was worthy of great things.",
       image: jill,
       name: "Jill"

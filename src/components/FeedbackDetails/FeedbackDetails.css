@@ -20,11 +20,12 @@
 
 .accordion-item {
   margin-bottom: 1rem;
-  border-radius: 8px;
   overflow: hidden;
   background-color: transparent;
   transition: background-color 0.3s ease;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
+
 
 .accordion-header {
   width: 100%;
@@ -42,7 +43,6 @@
   font-weight: 700;
   text-align: left;
   transition: background-color 0.3s ease;
-  border-radius: 30px;
 }
 
 .accordion-header:hover {
