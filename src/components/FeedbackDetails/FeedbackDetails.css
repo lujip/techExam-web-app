@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;700&display=swap');
+
+
+.feedback-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.accordion-container {
+  flex: 1;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Inter', sans-serif; */
+  color: #303030;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+.accordion-header:hover {
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.accordion-header.active {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+.plus-symbol {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #c04f29;
+  border-color: #c04f29;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+.accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.accordion-content.active {
+  max-height: none;
+  opacity: 1;
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scaleY(1);
+}
+
+.accordion-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+}
+
+.feedback-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.feedback-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .feedback-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .feedback-image {
+    max-width: 100%;
+  }
+
+  .feedback-section {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,18 +1,32 @@
 .founder-section {
   min-height: 100vh;
-  padding: 0px 0px;
-  margin-top: -150px;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .founder-container {
-  width: 100%;
+  width: min(100%, 1800px);
   display: flex;
   align-items: center;
   gap: 120px;
   padding: 0px 40px;
+  margin: 0 auto;
+}
+
+.founder-right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 500px;
+}
+
+.founder-title {
+  flex: 1;
 }
 
 .founder-image {
@@ -23,7 +37,7 @@
 }
 
 .founder-image img {
-  max-width: 120%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -53,94 +67,212 @@
 .founder-text {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #666;
   margin: 0;
   text-align: justify;
 }
 
 .founder-button {
-    align-self: flex-start;
-    padding: 15px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #BF745C;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .founder-button:hover {
-    background: #c04f29;
-  }
+  align-self: flex-start;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #BF745C;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.founder-button:hover {
+  background: #c04f29;
+}
+
+.mobile-text {
+  display: none;
+}
+
+.founder-content .founder-name,
+.founder-content .founder-name2 {
+  display: none;
+}
+
+.founder-title .founder-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.founder-title .founder-name2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #D88D78;
+  margin-top: -30px;
+}
+
+.mobile-founder-title {
+  display: none;
+}
+
+.mobile-founder-title .founder-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.mobile-founder-title .founder-name2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #D88D78;
+  margin-top: -30px;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
   .founder-section {
-    padding: 0px 20px;
-    margin-top: -80px;
+    padding: 0;
   }
   
   .founder-container {
     flex-direction: column;
     gap: 40px;
+    padding: 20px 25px;
+    width: 100%;
+  }
+
+  .mobile-founder-title {
+    display: block;
     text-align: center;
+    order: -2;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .mobile-founder-title .founder-name {
+    display: block;
+    font-size: 2.8rem;
+    margin: 0;
+  }
+  
+  .mobile-founder-title .founder-name2 {
+    display: block;
+    font-size: 2.8rem;
+    margin-top: -20px;
+  }
+
+  .founder-title {
+    display: none;
+  }
+
+  .founder-right-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
   }
   
   .founder-image {
     flex: none;
-    max-width: 350px;
+    max-width: 100%;
+    padding: 0;
+    order: -1;
   }
   
+  .founder-content {
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .founder-image img {
     max-width: 100%;
+    width: 350px;
   }
-  
-  .founder-name {
+
+  .founder-title .founder-name {
     font-size: 2.8rem;
+    text-align: center;
   }
   
-  .founder-name2 {
+  .founder-title .founder-name2 {
     font-size: 2.8rem;
     margin-top: -20px;
+    text-align: center;
   }
   
   .founder-text {
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.1rem;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  .founder-button {
+    align-self: center;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+  }
+
+  .mobile-founder-title .founder-name {
+    font-size: 2.5rem;
+  }
+  
+  .mobile-founder-title .founder-name2 {
+    font-size: 2.8rem;
+    margin-top: -20px;
   }
 }
 
 @media (max-width: 480px) {
-  .founder-section {
-    padding: 0px 15px;
-    margin-top: -50px;
-  }
-  
   .founder-container {
-    gap: 30px;
+    padding: 15px 25px;
   }
   
-  .founder-image {
-    max-width: 280px;
+  .founder-content {
+    width: 85%;
+    max-width: 350px;
+    padding: 0px 25px;
   }
-  
+
   .founder-image img {
-    max-width: 100%;
+    width: 280px;
   }
   
-  .founder-name {
+  .founder-title .founder-name {
     font-size: 2.2rem;
+    text-align: center;
   }
   
-  .founder-name2 {
+  .founder-title .founder-name2 {
     font-size: 2.2rem;
     margin-top: -15px;
+    text-align: center;
   }
   
   .founder-text {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    padding: 0;
+  }
+
+  .mobile-founder-title .founder-name {
+    font-size: 1.7rem;
+  }
+  
+  .mobile-founder-title .founder-name2 {
+    font-size: 2.2rem;
+    margin-top: -10px;
   }
 } 

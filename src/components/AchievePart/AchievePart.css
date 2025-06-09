@@ -1,11 +1,14 @@
 .achieve-part {
   min-height: 100vh;
-  padding: 120px 20px 0px 20px;
+  padding: 120px 20px 80px 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .achieve-title {
@@ -80,9 +83,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 180px;
+  gap: 80px;
   margin-top: 40px;
   flex-wrap: wrap;
+  padding-bottom: 80px;
 }
 
 .image-item {
@@ -121,7 +125,8 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .achieve-part {
-    padding: 60px 20px 0px 20px;
+    padding: 80px 20px;
+    margin-top: 0;
   }
   
   .achieve-title {
@@ -153,7 +158,8 @@
 
 @media (max-width: 480px) {
   .achieve-part {
-    padding: 40px 15px 0px 15px;
+    padding: 60px 15px;
+    margin-top: 0;
   }
   
   .achieve-title {
