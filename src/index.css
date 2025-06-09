@@ -1,26 +1,37 @@
-/* Global font settings */
+/* Global reset and padding */
 * {
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
+}
+
+/* Ensure the page is scrollable */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #EDD0B9 0%, #FFFBF5 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-/* Playfair Display for headings and special text */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  font-weight: 600;
+/* App container */
+.app {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* Oxygen for body text and general content */
-p, span, div, a, button, input, textarea, select {
-  font-family: 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
-
