@@ -34,7 +34,7 @@ const CommentDetails = () => {
       <div className="comment-container">
         <div className="first-comment-wrapper">
           <h2 className="comment-title">
-            <span className="title-highlight">See how women have been impacted by the </span> power of love:
+            <span className="title-highlight">See how women have been impacted by the </span> <br /> power of love:
           </h2>
           <div className="comment-card" data-active={currentSlide === 0}>
             <p className="comment-text">
