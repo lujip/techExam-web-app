@@ -13,15 +13,18 @@ const AchievePart = () => {
         <div className="images-container">
           <div className="image-item">
             <img src={img1} alt="Achievement 1" className="achieve-image" />
-            <p className="image-text">Confidence & Self-Love</p>
+            <p className="image-text">Why you don't need to settle for unhappiness in this ONE area of your life</p>
           </div>
           <div className="image-item">
             <img src={img2} alt="Achievement 2" className="achieve-image" />
-            <p className="image-text">Authentic Connections</p>
+            <p className="image-text">Why you can have it all (and how to stop attracting the wrong guys who are 
+              intimidated by your success)</p>
           </div>
           <div className="image-item">
             <img src={img3} alt="Achievement 3" className="achieve-image" />
-            <p className="image-text">Lasting Relationships</p>
+            <p className="image-text">How to break down the walls that keep you authentic self hidden from your forever
+              partner
+            </p>
           </div>
         </div>
       </div>

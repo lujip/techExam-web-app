@@ -6,6 +6,7 @@ import AssociatedComp from './components/AssociatedComp/AssociatedComp'
 import FeedbackDetails from './components/FeedbackDetails/FeedbackDetails'
 import CommentDetails from './components/CommentDetails/CommentDetails'
 import Agenda from './components/Agenda/Agenda'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <FeedbackDetails />
       <CommentDetails />
       <Agenda />
+      <Footer />
     </div>
   )
 }
