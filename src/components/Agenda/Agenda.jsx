@@ -50,38 +50,40 @@ const Agenda = () => {
   };
 
   return (
-    <div className="agenda-container">
-      <div className="agenda-title">
-        <h2>What's on the <br /> agenda.</h2>
-      </div>
-      <div className="agenda-content">
-        <nav className="day-navigation">
-          {[1, 2, 3].map((day) => (
-            <button
-              key={day}
-              className={`day-button ${selectedDay === day ? 'active' : ''}`}
-              onClick={() => setSelectedDay(day)}
-            >
-              Day {day}
-            </button>
-          ))}
-        </nav>
-        <div className="agenda-content-text">
-          <h3>{agendaContent[selectedDay].title}</h3>
-          {agendaContent[selectedDay].content.map((paragraph, index) => (
-            <p key={index} className="content-paragraph">{paragraph}</p>
-          ))}
-          <div className="agenda-list-container">
-            <div className="numbered-list">
-              {agendaContent[selectedDay].list.map((item) => (
-                <div key={item.number} className="list-item">
-                  <div className="number">{item.number}</div>
-                  <div className="item-content">
-                    <h4>{item.title}</h4>
-                    <p>{item.description}</p>
+    <div className="agenda-section">
+      <div className="agenda-container">
+        <div className="agenda-title">
+          <h2>What's on the <br /> agenda.</h2>
+        </div>
+        <div className="agenda-content">
+          <nav className="day-navigation">
+            {[1, 2, 3].map((day) => (
+              <button
+                key={day}
+                className={`day-button ${selectedDay === day ? 'active' : ''}`}
+                onClick={() => setSelectedDay(day)}
+              >
+                Day {day}
+              </button>
+            ))}
+          </nav>
+          <div className="agenda-content-text">
+            <h3>{agendaContent[selectedDay].title}</h3>
+            {agendaContent[selectedDay].content.map((paragraph, index) => (
+              <p key={index} className="content-paragraph">{paragraph}</p>
+            ))}
+            <div className="agenda-list-container">
+              <div className="numbered-list">
+                {agendaContent[selectedDay].list.map((item) => (
+                  <div key={item.number} className="list-item">
+                    <div className="number">{item.number}</div>
+                    <div className="item-content">
+                      <h4>{item.title}</h4>
+                      <p>{item.description}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

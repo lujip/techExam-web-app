@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   margin: 0;
-  background: linear-gradient(135deg, #EDD0B9 0%, #FFFBF5 100%);
+  background: linear-gradient(to right, #EDD0B9 0%, #FFFBF5 100%); 
   background-attachment: fixed;
   min-height: 100vh;
 }
