@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import './CommentDetails.css'
-import janice from '../../assets/images/janice.webp'
-import jill from '../../assets/images/jill.webp'
+import React, { useState } from 'react';
+import './CommentDetails.css';
+import janice from '../../assets/images/janice.webp';
+import jill from '../../assets/images/jill.webp';
 
 const CommentDetails = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const comments = [
     {
       text: "''Once Marni held me accountable, it was easier for me to finally recognize when Mr. Right (Mark) came along.''",
@@ -36,13 +36,14 @@ const CommentDetails = () => {
           <h2 className="comment-title">
             <span className="title-highlight">See how women have been impacted by the </span> <br /> power of love:
           </h2>
-          <div className="comment-card" data-active={currentSlide === 0}>
-            <p className="comment-text">
-              {comments[0].text}
-            </p>
-            <p className="comment-subtext">
-              {comments[0].subtext}
-            </p>
+
+          <div
+            key={`comment-${currentSlide}`}
+            className={`comment-card ${currentSlide === 0 ? 'fade-in' : ''}`}
+            data-active={currentSlide === 0}
+          >
+            <p className="comment-text">{comments[0].text}</p>
+            <p className="comment-subtext">{comments[0].subtext}</p>
             <div className="comment-footer">
               <img src={comments[0].image} alt={comments[0].name} className="commenter-icon" />
               <span className="commenter-name">{comments[0].name}</span>
@@ -50,13 +51,13 @@ const CommentDetails = () => {
           </div>
         </div>
 
-        <div className="comment-card mobile-comment-card" data-active={currentSlide === 1}>
-          <p className="comment-text">
-            {comments[1].text}
-          </p>
-          <p className="comment-subtext">
-            {comments[1].subtext}
-          </p>
+        <div
+          key={`mobile-comment-${currentSlide}`}
+          className={`comment-card mobile-comment-card ${currentSlide === 1 ? 'fade-in' : ''}`}
+          data-active={currentSlide === 1}
+        >
+          <p className="comment-text">{comments[1].text}</p>
+          <p className="comment-subtext">{comments[1].subtext}</p>
           <div className="comment-footer">
             <img src={comments[1].image} alt={comments[1].name} className="commenter-icon" />
             <span className="commenter-name">{comments[1].name}</span>
@@ -67,7 +68,7 @@ const CommentDetails = () => {
           <button className="nav-button prev" onClick={prevSlide} aria-label="Previous comment">&lt;</button>
           <div className="dot-indicators">
             {comments.map((_, index) => (
-              <button 
+              <button
                 key={index}
                 className={`dot ${currentSlide === index ? 'active' : ''}`}
                 onClick={() => setCurrentSlide(index)}
@@ -79,7 +80,7 @@ const CommentDetails = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CommentDetails
+export default CommentDetails;

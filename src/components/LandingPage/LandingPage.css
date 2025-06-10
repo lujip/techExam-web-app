@@ -41,9 +41,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: -5vh;
+  margin-bottom: -4vh;
   font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .logo img {
@@ -51,11 +52,12 @@
   width: auto;
   order: 2;
   will-change: transform;
+  -webkit-backface-visibility: hidden;
   animation: spin 20s linear infinite;
 }
 
 .logo span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #333;
   order: 1;
 }
@@ -145,7 +147,7 @@
   }
   
   .text-content {
-    padding: 10px 20px;
+    padding: 0 20px;
     width: 100%;
     text-align: left;
     order: 2;
@@ -153,6 +155,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
   }
   
   .text-content button {
@@ -176,13 +179,13 @@
   }
   
   .text-content h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     padding: 0;
   }
   
   .text-content p {
     font-size: 1.1rem;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .image-content img {
