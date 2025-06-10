@@ -110,18 +110,20 @@
   max-width: 800px;
   width: 100%;
   position: relative;
+  
 }
 
 .numbered-list::before {
-  content: '';
-  position: absolute;
-  left: 16px;
-  top: 20px;
-  height: calc(100% - 100px);
-  width: 8px;
-  background-color: #EA9077;
-  opacity: 0.3;
-}
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: #EA9077;
+    opacity: 0.3;
+  }
+  
 
 .list-item {
   display: flex;
